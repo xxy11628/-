@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\UltrasoundHost.Contracts\UltrasoundHost.Contracts.csproj" />
+    <ProjectReference Include="..\UltrasoundHost.Core\UltrasoundHost.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="UltrasoundHost.Tests" />
+  </ItemGroup>
+</Project>

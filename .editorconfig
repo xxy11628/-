@@ -1,0 +1,33 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{csproj,props,targets,json,yml,yaml}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+# 07 Q1: library awaits must not capture a context. UI composition (WPF) and tests are exempt.
+[src/UltrasoundHost.Contracts/**/*.cs]
+dotnet_diagnostic.CA2007.severity = error
+
+[src/UltrasoundHost.Core/**/*.cs]
+dotnet_diagnostic.CA2007.severity = error
+
+[src/UltrasoundHost.Application/**/*.cs]
+dotnet_diagnostic.CA2007.severity = error
+
+[src/Plugins/**/*.cs]
+dotnet_diagnostic.CA2007.severity = error
+
+[src/UltrasoundHost.App.Wpf/**/*.cs]
+dotnet_diagnostic.CA2007.severity = none
+
+[tests/**/*.cs]
+dotnet_diagnostic.CA2007.severity = none

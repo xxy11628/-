@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+TestResults/
+.tools/
+
+# Written into the working directory by the Sogou input method, not by this project.
+debug.log

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- 07 §5 frame-leak counter: the session checks it, tests assert against it. Not public API. -->
+    <InternalsVisibleTo Include="UltrasoundHost.Application" />
+    <InternalsVisibleTo Include="UltrasoundHost.Tests" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+# APIs banned in library projects (07 Q2). App.* composition roots and tests are exempt,
+# because they are where blocking on background work is coordinated at the top of the call stack.
+T:System.Console;Do not write to the console from a library; expose state or use the host's logging.
+P:System.Threading.Tasks.Task`1.Result;Await the task instead of blocking on .Result.
+M:System.Threading.Tasks.Task.Wait();Await the task instead of blocking on .Wait().
+M:System.Threading.Tasks.Task.Wait(System.TimeSpan);Await the task instead of blocking on .Wait().
+M:System.Threading.Tasks.Task`1.Wait();Await the task instead of blocking on .Wait().
+M:System.Threading.Tasks.Task`1.Wait(System.TimeSpan);Await the task instead of blocking on .Wait().
+M:System.Runtime.CompilerServices.TaskAwaiter.GetResult;Await the task instead of blocking on GetResult().
+M:System.Runtime.CompilerServices.TaskAwaiter`1.GetResult;Await the task instead of blocking on GetResult().
+M:System.Threading.Thread.Sleep(System.Int32);Use Task.Delay instead of Thread.Sleep.
+M:System.Threading.Thread.Sleep(System.TimeSpan);Use Task.Delay instead of Thread.Sleep.
+M:System.Threading.Thread.#ctor();Background work must be owned by the session; use the host's tasks (07 Q8).
+M:System.Threading.Thread.#ctor(System.Threading.ThreadStart);Background work must be owned by the session; use the host's tasks (07 Q8).

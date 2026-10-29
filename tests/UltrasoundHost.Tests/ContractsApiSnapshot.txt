@@ -1,0 +1,290 @@
+# version 0.3.0
+C:UltrasoundHost.Contracts.AcquisitionParameters()
+C:UltrasoundHost.Contracts.AdcFormat()
+C:UltrasoundHost.Contracts.DeviceCapabilities()
+C:UltrasoundHost.Contracts.DeviceOpenOptions()
+C:UltrasoundHost.Contracts.DeviceRequirements()
+C:UltrasoundHost.Contracts.DisplayNeeds()
+C:UltrasoundHost.Contracts.GateConfig(System.Double, System.Double, System.Double)
+C:UltrasoundHost.Contracts.GateResult(System.Int32, System.Boolean, System.Double, System.Int32, System.Double, System.Double)
+C:UltrasoundHost.Contracts.HostCapabilities()
+C:UltrasoundHost.Contracts.HostRequirements()
+C:UltrasoundHost.Contracts.IntRange(System.Int32, System.Int32)
+C:UltrasoundHost.Contracts.PluginManifest(System.String, System.Version, UltrasoundHost.Contracts.PluginKind, System.String)
+C:UltrasoundHost.Contracts.ProbeModel(UltrasoundHost.Contracts.ProbeTopologies, System.Numerics.Vector3[], System.Numerics.Vector3[])
+C:UltrasoundHost.Contracts.ProcessedFrame(System.Int64, System.Int32, System.Collections.Generic.IReadOnlyList<UltrasoundHost.Contracts.GateResult>)
+C:UltrasoundHost.Contracts.ViewDescriptor(System.String, System.String, System.String, UltrasoundHost.Contracts.AcquisitionSchemes)
+F:UltrasoundHost.Contracts.AcquisitionSchemes.AScan -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.Fmc -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.Hmc -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.HwBeamformed -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.None -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.PlaneWave -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.Sparse -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.SubAperture -> UltrasoundHost.Contracts.AcquisitionSchemes
+F:UltrasoundHost.Contracts.AcquisitionSchemes.value__ -> System.Int32
+F:UltrasoundHost.Contracts.ContractsInfo.Current -> System.Version
+F:UltrasoundHost.Contracts.DisplayChannelSelection.All -> UltrasoundHost.Contracts.DisplayChannelSelection
+F:UltrasoundHost.Contracts.DisplayChannelSelection.Explicit -> UltrasoundHost.Contracts.DisplayChannelSelection
+F:UltrasoundHost.Contracts.DisplayChannelSelection.Selected -> UltrasoundHost.Contracts.DisplayChannelSelection
+F:UltrasoundHost.Contracts.DisplayChannelSelection.value__ -> System.Int32
+F:UltrasoundHost.Contracts.FrameFlags.DeviceOverflow -> UltrasoundHost.Contracts.FrameFlags
+F:UltrasoundHost.Contracts.FrameFlags.None -> UltrasoundHost.Contracts.FrameFlags
+F:UltrasoundHost.Contracts.FrameFlags.Truncated -> UltrasoundHost.Contracts.FrameFlags
+F:UltrasoundHost.Contracts.FrameFlags.value__ -> System.Int32
+F:UltrasoundHost.Contracts.FrameKind.AScan -> UltrasoundHost.Contracts.FrameKind
+F:UltrasoundHost.Contracts.FrameKind.BeamformedLine -> UltrasoundHost.Contracts.FrameKind
+F:UltrasoundHost.Contracts.FrameKind.Fmc -> UltrasoundHost.Contracts.FrameKind
+F:UltrasoundHost.Contracts.FrameKind.RawChannel -> UltrasoundHost.Contracts.FrameKind
+F:UltrasoundHost.Contracts.FrameKind.value__ -> System.Int32
+F:UltrasoundHost.Contracts.PluginKind.Device -> UltrasoundHost.Contracts.PluginKind
+F:UltrasoundHost.Contracts.PluginKind.Processing -> UltrasoundHost.Contracts.PluginKind
+F:UltrasoundHost.Contracts.PluginKind.Storage -> UltrasoundHost.Contracts.PluginKind
+F:UltrasoundHost.Contracts.PluginKind.Technique -> UltrasoundHost.Contracts.PluginKind
+F:UltrasoundHost.Contracts.PluginKind.View -> UltrasoundHost.Contracts.PluginKind
+F:UltrasoundHost.Contracts.PluginKind.value__ -> System.Int32
+F:UltrasoundHost.Contracts.ProbeTopologies.Annular -> UltrasoundHost.Contracts.ProbeTopologies
+F:UltrasoundHost.Contracts.ProbeTopologies.Curved -> UltrasoundHost.Contracts.ProbeTopologies
+F:UltrasoundHost.Contracts.ProbeTopologies.Linear -> UltrasoundHost.Contracts.ProbeTopologies
+F:UltrasoundHost.Contracts.ProbeTopologies.Matrix -> UltrasoundHost.Contracts.ProbeTopologies
+F:UltrasoundHost.Contracts.ProbeTopologies.None -> UltrasoundHost.Contracts.ProbeTopologies
+F:UltrasoundHost.Contracts.ProbeTopologies.Single -> UltrasoundHost.Contracts.ProbeTopologies
+F:UltrasoundHost.Contracts.ProbeTopologies.value__ -> System.Int32
+F:UltrasoundHost.Contracts.ViewKinds.AScan -> System.String
+F:UltrasoundHost.Contracts.ViewKinds.GateTable -> System.String
+M:UltrasoundHost.Contracts.AcquisitionFrame.Dispose() -> System.Void
+M:UltrasoundHost.Contracts.AcquisitionFrame.Rent(UltrasoundHost.Contracts.FrameKind, System.Int32, System.Int32, System.Int32) -> UltrasoundHost.Contracts.AcquisitionFrame
+M:UltrasoundHost.Contracts.AcquisitionFrame.Retain() -> UltrasoundHost.Contracts.AcquisitionFrame
+M:UltrasoundHost.Contracts.AcquisitionFrame.Span(System.Int32, System.Int32) -> System.Span<System.Int16>
+M:UltrasoundHost.Contracts.AcquisitionParameters.<Clone>$() -> UltrasoundHost.Contracts.AcquisitionParameters
+M:UltrasoundHost.Contracts.AcquisitionParameters.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.AcquisitionParameters.Equals(UltrasoundHost.Contracts.AcquisitionParameters) -> System.Boolean
+M:UltrasoundHost.Contracts.AcquisitionParameters.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.AcquisitionParameters.Revise(System.Func<UltrasoundHost.Contracts.AcquisitionParameters, UltrasoundHost.Contracts.AcquisitionParameters>) -> UltrasoundHost.Contracts.AcquisitionParameters
+M:UltrasoundHost.Contracts.AcquisitionParameters.ToString() -> System.String
+M:UltrasoundHost.Contracts.AcquisitionParameters.Validate() -> System.Collections.Generic.IReadOnlyList<System.String>
+M:UltrasoundHost.Contracts.AcquisitionParameters.ValidateAgainst(UltrasoundHost.Contracts.DeviceCapabilities) -> System.Collections.Generic.IReadOnlyList<System.String>
+M:UltrasoundHost.Contracts.AdcFormat.<Clone>$() -> UltrasoundHost.Contracts.AdcFormat
+M:UltrasoundHost.Contracts.AdcFormat.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.AdcFormat.Equals(UltrasoundHost.Contracts.AdcFormat) -> System.Boolean
+M:UltrasoundHost.Contracts.AdcFormat.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.AdcFormat.ToString() -> System.String
+M:UltrasoundHost.Contracts.AdcFormat.Validate() -> System.Collections.Generic.IReadOnlyList<System.String>
+M:UltrasoundHost.Contracts.DeviceCapabilities.<Clone>$() -> UltrasoundHost.Contracts.DeviceCapabilities
+M:UltrasoundHost.Contracts.DeviceCapabilities.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceCapabilities.Equals(UltrasoundHost.Contracts.DeviceCapabilities) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceCapabilities.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.DeviceCapabilities.ToString() -> System.String
+M:UltrasoundHost.Contracts.DeviceOpenOptions.<Clone>$() -> UltrasoundHost.Contracts.DeviceOpenOptions
+M:UltrasoundHost.Contracts.DeviceOpenOptions.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceOpenOptions.Equals(UltrasoundHost.Contracts.DeviceOpenOptions) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceOpenOptions.GetBool(System.String, System.Boolean) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceOpenOptions.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.DeviceOpenOptions.GetInt(System.String, System.Int32) -> System.Int32
+M:UltrasoundHost.Contracts.DeviceOpenOptions.ToString() -> System.String
+M:UltrasoundHost.Contracts.DeviceRequirements.<Clone>$() -> UltrasoundHost.Contracts.DeviceRequirements
+M:UltrasoundHost.Contracts.DeviceRequirements.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceRequirements.Equals(UltrasoundHost.Contracts.DeviceRequirements) -> System.Boolean
+M:UltrasoundHost.Contracts.DeviceRequirements.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.DeviceRequirements.ToString() -> System.String
+M:UltrasoundHost.Contracts.DisplayNeeds.<Clone>$() -> UltrasoundHost.Contracts.DisplayNeeds
+M:UltrasoundHost.Contracts.DisplayNeeds.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.DisplayNeeds.Equals(UltrasoundHost.Contracts.DisplayNeeds) -> System.Boolean
+M:UltrasoundHost.Contracts.DisplayNeeds.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.DisplayNeeds.ToString() -> System.String
+M:UltrasoundHost.Contracts.DisplayNeeds.Validate() -> System.Collections.Generic.IReadOnlyList<System.String>
+M:UltrasoundHost.Contracts.GateConfig.<Clone>$() -> UltrasoundHost.Contracts.GateConfig
+M:UltrasoundHost.Contracts.GateConfig.Deconstruct(System.Double&, System.Double&, System.Double&) -> System.Void
+M:UltrasoundHost.Contracts.GateConfig.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.GateConfig.Equals(UltrasoundHost.Contracts.GateConfig) -> System.Boolean
+M:UltrasoundHost.Contracts.GateConfig.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.GateConfig.ToString() -> System.String
+M:UltrasoundHost.Contracts.GateResult.<Clone>$() -> UltrasoundHost.Contracts.GateResult
+M:UltrasoundHost.Contracts.GateResult.Deconstruct(System.Int32&, System.Boolean&, System.Double&, System.Int32&, System.Double&, System.Double&) -> System.Void
+M:UltrasoundHost.Contracts.GateResult.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.GateResult.Equals(UltrasoundHost.Contracts.GateResult) -> System.Boolean
+M:UltrasoundHost.Contracts.GateResult.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.GateResult.ToString() -> System.String
+M:UltrasoundHost.Contracts.HostCapabilities.<Clone>$() -> UltrasoundHost.Contracts.HostCapabilities
+M:UltrasoundHost.Contracts.HostCapabilities.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.HostCapabilities.Equals(UltrasoundHost.Contracts.HostCapabilities) -> System.Boolean
+M:UltrasoundHost.Contracts.HostCapabilities.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.HostCapabilities.ToString() -> System.String
+M:UltrasoundHost.Contracts.HostRequirements.<Clone>$() -> UltrasoundHost.Contracts.HostRequirements
+M:UltrasoundHost.Contracts.HostRequirements.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.HostRequirements.Equals(UltrasoundHost.Contracts.HostRequirements) -> System.Boolean
+M:UltrasoundHost.Contracts.HostRequirements.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.HostRequirements.ToString() -> System.String
+M:UltrasoundHost.Contracts.IDevice.ApplyAsync(UltrasoundHost.Contracts.AcquisitionParameters, System.Threading.CancellationToken) -> System.Threading.Tasks.Task
+M:UltrasoundHost.Contracts.IDevice.StartAsync(System.Threading.Channels.ChannelWriter<UltrasoundHost.Contracts.AcquisitionFrame>, System.Threading.CancellationToken) -> System.Threading.Tasks.Task
+M:UltrasoundHost.Contracts.IDevice.StopAsync(System.Threading.CancellationToken) -> System.Threading.Tasks.Task
+M:UltrasoundHost.Contracts.IDeviceFactory.OpenAsync(UltrasoundHost.Contracts.DeviceOpenOptions, System.Threading.CancellationToken) -> System.Threading.Tasks.Task<UltrasoundHost.Contracts.IDevice>
+M:UltrasoundHost.Contracts.IFrameProcessor.Process(UltrasoundHost.Contracts.AcquisitionFrame, UltrasoundHost.Contracts.AcquisitionParameters) -> UltrasoundHost.Contracts.ProcessedFrame
+M:UltrasoundHost.Contracts.IPlugin.InitializeAsync(System.IServiceProvider, System.Threading.CancellationToken) -> System.Threading.Tasks.ValueTask
+M:UltrasoundHost.Contracts.IPlugin.Register(Microsoft.Extensions.DependencyInjection.IServiceCollection) -> System.Void
+M:UltrasoundHost.Contracts.IPlugin.StartAsync(System.Threading.CancellationToken) -> System.Threading.Tasks.ValueTask
+M:UltrasoundHost.Contracts.IPlugin.StopAsync(System.Threading.CancellationToken) -> System.Threading.Tasks.ValueTask
+M:UltrasoundHost.Contracts.IProcessorContribution.CreateProcessor() -> UltrasoundHost.Contracts.IFrameProcessor
+M:UltrasoundHost.Contracts.IntRange.Contains(System.Int32) -> System.Boolean
+M:UltrasoundHost.Contracts.IntRange.Deconstruct(System.Int32&, System.Int32&) -> System.Void
+M:UltrasoundHost.Contracts.IntRange.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.IntRange.Equals(UltrasoundHost.Contracts.IntRange) -> System.Boolean
+M:UltrasoundHost.Contracts.IntRange.Exactly(System.Int32) -> UltrasoundHost.Contracts.IntRange
+M:UltrasoundHost.Contracts.IntRange.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.IntRange.Overlaps(UltrasoundHost.Contracts.IntRange) -> System.Boolean
+M:UltrasoundHost.Contracts.IntRange.ToString() -> System.String
+M:UltrasoundHost.Contracts.PluginManifest.<Clone>$() -> UltrasoundHost.Contracts.PluginManifest
+M:UltrasoundHost.Contracts.PluginManifest.Deconstruct(System.String&, System.Version&, UltrasoundHost.Contracts.PluginKind&, System.String&) -> System.Void
+M:UltrasoundHost.Contracts.PluginManifest.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.PluginManifest.Equals(UltrasoundHost.Contracts.PluginManifest) -> System.Boolean
+M:UltrasoundHost.Contracts.PluginManifest.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.PluginManifest.ToString() -> System.String
+M:UltrasoundHost.Contracts.ProbeModel.Linear(System.Int32, System.Double) -> UltrasoundHost.Contracts.ProbeModel
+M:UltrasoundHost.Contracts.ProbeModel.Matrix(System.Int32, System.Int32, System.Double, System.Double) -> UltrasoundHost.Contracts.ProbeModel
+M:UltrasoundHost.Contracts.ProbeModel.Single() -> UltrasoundHost.Contracts.ProbeModel
+M:UltrasoundHost.Contracts.ProcessedFrame.<Clone>$() -> UltrasoundHost.Contracts.ProcessedFrame
+M:UltrasoundHost.Contracts.ProcessedFrame.Deconstruct(System.Int64&, System.Int32&, System.Collections.Generic.IReadOnlyList`1[[UltrasoundHost.Contracts.GateResult, UltrasoundHost.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&) -> System.Void
+M:UltrasoundHost.Contracts.ProcessedFrame.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.ProcessedFrame.Equals(UltrasoundHost.Contracts.ProcessedFrame) -> System.Boolean
+M:UltrasoundHost.Contracts.ProcessedFrame.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.ProcessedFrame.ToString() -> System.String
+M:UltrasoundHost.Contracts.ViewDescriptor.<Clone>$() -> UltrasoundHost.Contracts.ViewDescriptor
+M:UltrasoundHost.Contracts.ViewDescriptor.Deconstruct(System.String&, System.String&, System.String&, UltrasoundHost.Contracts.AcquisitionSchemes&) -> System.Void
+M:UltrasoundHost.Contracts.ViewDescriptor.Equals(System.Object) -> System.Boolean
+M:UltrasoundHost.Contracts.ViewDescriptor.Equals(UltrasoundHost.Contracts.ViewDescriptor) -> System.Boolean
+M:UltrasoundHost.Contracts.ViewDescriptor.GetHashCode() -> System.Int32
+M:UltrasoundHost.Contracts.ViewDescriptor.Matches(UltrasoundHost.Contracts.AcquisitionSchemes) -> System.Boolean
+M:UltrasoundHost.Contracts.ViewDescriptor.ToString() -> System.String
+P:UltrasoundHost.Contracts.AcquisitionFrame.Adc -> UltrasoundHost.Contracts.AdcFormat [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Data -> System.Memory<System.Int16> [get]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Flags -> UltrasoundHost.Contracts.FrameFlags [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Kind -> UltrasoundHost.Contracts.FrameKind [get]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Length -> System.Int32 [get]
+P:UltrasoundHost.Contracts.AcquisitionFrame.ParamVersion -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.RefCount -> System.Int32 [get]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Rx -> System.Int32 [get]
+P:UltrasoundHost.Contracts.AcquisitionFrame.SampleRateHz -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Samples -> System.Int32 [get]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Sequence -> System.Int64 [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.StartDelaySeconds -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.TimestampNs -> System.Int64 [get,set]
+P:UltrasoundHost.Contracts.AcquisitionFrame.Tx -> System.Int32 [get]
+P:UltrasoundHost.Contracts.AcquisitionParameters.ActiveReceiveChannels -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.GainDb -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.Gate -> UltrasoundHost.Contracts.GateConfig [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.PrfHz -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.SampleRateHz -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.SamplesPerRecord -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.SoundSpeedMps -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.StartDelaySeconds -> System.Double [get,set]
+P:UltrasoundHost.Contracts.AcquisitionParameters.Version -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.AdcFormat.Bits -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.AdcFormat.Default -> UltrasoundHost.Contracts.AdcFormat [get]
+P:UltrasoundHost.Contracts.AdcFormat.FullScaleCounts -> System.Double [get]
+P:UltrasoundHost.Contracts.AdcFormat.MaxCounts -> System.Double [get]
+P:UltrasoundHost.Contracts.AdcFormat.MinCounts -> System.Double [get]
+P:UltrasoundHost.Contracts.AdcFormat.RightAligned -> System.Boolean [get,set]
+P:UltrasoundHost.Contracts.AdcFormat.Signed -> System.Boolean [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.Adc -> UltrasoundHost.Contracts.AdcFormat [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.ElementCount -> UltrasoundHost.Contracts.IntRange [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.MaxPrfHz -> System.Double [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.MaxSampleRateHz -> System.Double [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.Model -> System.String [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.ReceiveChannels -> UltrasoundHost.Contracts.IntRange [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.SamplesPerRecord -> UltrasoundHost.Contracts.IntRange [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.Schemes -> UltrasoundHost.Contracts.AcquisitionSchemes [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.SupportsMultiBoardSync -> System.Boolean [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.ThroughputMBps -> System.Double [get,set]
+P:UltrasoundHost.Contracts.DeviceCapabilities.Topologies -> UltrasoundHost.Contracts.ProbeTopologies [get,set]
+P:UltrasoundHost.Contracts.DeviceOpenOptions.Settings -> System.Collections.Generic.IReadOnlyDictionary<System.String, System.String> [get,set]
+P:UltrasoundHost.Contracts.DeviceRequirements.ElementCount -> UltrasoundHost.Contracts.IntRange [get,set]
+P:UltrasoundHost.Contracts.DeviceRequirements.MinThroughputMBps -> System.Double [get,set]
+P:UltrasoundHost.Contracts.DeviceRequirements.NeedsMultiBoardSync -> System.Boolean [get,set]
+P:UltrasoundHost.Contracts.DeviceRequirements.None -> UltrasoundHost.Contracts.DeviceRequirements [get]
+P:UltrasoundHost.Contracts.DeviceRequirements.ReceiveChannels -> UltrasoundHost.Contracts.IntRange [get,set]
+P:UltrasoundHost.Contracts.DeviceRequirements.Schemes -> UltrasoundHost.Contracts.AcquisitionSchemes [get,set]
+P:UltrasoundHost.Contracts.DeviceRequirements.Topologies -> UltrasoundHost.Contracts.ProbeTopologies [get,set]
+P:UltrasoundHost.Contracts.DisplayNeeds.Channels -> UltrasoundHost.Contracts.DisplayChannelSelection [get,set]
+P:UltrasoundHost.Contracts.DisplayNeeds.Default -> UltrasoundHost.Contracts.DisplayNeeds [get]
+P:UltrasoundHost.Contracts.DisplayNeeds.ExplicitChannels -> System.Collections.Generic.IReadOnlyList<System.Int32> [get,set]
+P:UltrasoundHost.Contracts.DisplayNeeds.MaxPointsAcross -> System.Nullable<System.Int32> [get,set]
+P:UltrasoundHost.Contracts.DisplayNeeds.MaxRefreshHz -> System.Nullable<System.Double> [get,set]
+P:UltrasoundHost.Contracts.GateConfig.Default -> UltrasoundHost.Contracts.GateConfig [get]
+P:UltrasoundHost.Contracts.GateConfig.EndSeconds -> System.Double [get,set]
+P:UltrasoundHost.Contracts.GateConfig.StartSeconds -> System.Double [get,set]
+P:UltrasoundHost.Contracts.GateConfig.Threshold -> System.Double [get,set]
+P:UltrasoundHost.Contracts.GateResult.Channel -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.GateResult.PeakAmplitude -> System.Double [get,set]
+P:UltrasoundHost.Contracts.GateResult.PeakIndex -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.GateResult.PeakTimeSeconds -> System.Double [get,set]
+P:UltrasoundHost.Contracts.GateResult.SoundPathMeters -> System.Double [get,set]
+P:UltrasoundHost.Contracts.GateResult.Triggered -> System.Boolean [get,set]
+P:UltrasoundHost.Contracts.HostCapabilities.GpuMemoryBytes -> System.Int64 [get,set]
+P:UltrasoundHost.Contracts.HostCapabilities.Tags -> System.Collections.Generic.IReadOnlyCollection<System.String> [get,set]
+P:UltrasoundHost.Contracts.HostRequirements.GpuMemoryBytes -> System.Int64 [get,set]
+P:UltrasoundHost.Contracts.HostRequirements.None -> UltrasoundHost.Contracts.HostRequirements [get]
+P:UltrasoundHost.Contracts.HostRequirements.Tags -> System.Collections.Generic.IReadOnlyList<System.String> [get,set]
+P:UltrasoundHost.Contracts.IDevice.Capabilities -> UltrasoundHost.Contracts.DeviceCapabilities [get]
+P:UltrasoundHost.Contracts.IDevice.Id -> System.String [get]
+P:UltrasoundHost.Contracts.IDevice.Probe -> UltrasoundHost.Contracts.ProbeModel [get]
+P:UltrasoundHost.Contracts.IDeviceFactory.DeviceType -> System.String [get]
+P:UltrasoundHost.Contracts.IDeviceFactoryContribution.Factory -> UltrasoundHost.Contracts.IDeviceFactory [get]
+P:UltrasoundHost.Contracts.IFrameProcessor.Name -> System.String [get]
+P:UltrasoundHost.Contracts.IPlugin.Manifest -> UltrasoundHost.Contracts.PluginManifest [get]
+P:UltrasoundHost.Contracts.IViewContribution.Views -> System.Collections.Generic.IReadOnlyList<UltrasoundHost.Contracts.ViewDescriptor> [get]
+P:UltrasoundHost.Contracts.IntRange.Any -> UltrasoundHost.Contracts.IntRange [get]
+P:UltrasoundHost.Contracts.IntRange.IsValid -> System.Boolean [get]
+P:UltrasoundHost.Contracts.IntRange.Max -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.IntRange.Min -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.DependsOn -> System.Collections.Generic.IReadOnlyList<System.String> [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.DeviceNeeds -> UltrasoundHost.Contracts.DeviceRequirements [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.DeviceProvides -> UltrasoundHost.Contracts.DeviceCapabilities [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.DisplayName -> System.String [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.HostRequires -> UltrasoundHost.Contracts.HostRequirements [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.Id -> System.String [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.Kind -> UltrasoundHost.Contracts.PluginKind [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.MinContractsVersion -> System.Version [get,set]
+P:UltrasoundHost.Contracts.PluginManifest.Version -> System.Version [get,set]
+P:UltrasoundHost.Contracts.ProbeModel.ElementCount -> System.Int32 [get]
+P:UltrasoundHost.Contracts.ProbeModel.Normals -> System.Collections.Generic.IReadOnlyList<System.Numerics.Vector3> [get]
+P:UltrasoundHost.Contracts.ProbeModel.Positions -> System.Collections.Generic.IReadOnlyList<System.Numerics.Vector3> [get]
+P:UltrasoundHost.Contracts.ProbeModel.Topology -> UltrasoundHost.Contracts.ProbeTopologies [get]
+P:UltrasoundHost.Contracts.ProcessedFrame.Gates -> System.Collections.Generic.IReadOnlyList<UltrasoundHost.Contracts.GateResult> [get,set]
+P:UltrasoundHost.Contracts.ProcessedFrame.ParamVersion -> System.Int32 [get,set]
+P:UltrasoundHost.Contracts.ProcessedFrame.Sequence -> System.Int64 [get,set]
+P:UltrasoundHost.Contracts.ViewDescriptor.Id -> System.String [get,set]
+P:UltrasoundHost.Contracts.ViewDescriptor.Needs -> UltrasoundHost.Contracts.DisplayNeeds [get,set]
+P:UltrasoundHost.Contracts.ViewDescriptor.Schemes -> UltrasoundHost.Contracts.AcquisitionSchemes [get,set]
+P:UltrasoundHost.Contracts.ViewDescriptor.Title -> System.String [get,set]
+P:UltrasoundHost.Contracts.ViewDescriptor.ViewKind -> System.String [get,set]
+T:UltrasoundHost.Contracts.AcquisitionFrame
+T:UltrasoundHost.Contracts.AcquisitionParameters
+T:UltrasoundHost.Contracts.AcquisitionSchemes
+T:UltrasoundHost.Contracts.AdcFormat
+T:UltrasoundHost.Contracts.ContractsInfo
+T:UltrasoundHost.Contracts.DeviceCapabilities
+T:UltrasoundHost.Contracts.DeviceOpenOptions
+T:UltrasoundHost.Contracts.DeviceRequirements
+T:UltrasoundHost.Contracts.DisplayChannelSelection
+T:UltrasoundHost.Contracts.DisplayNeeds
+T:UltrasoundHost.Contracts.FrameFlags
+T:UltrasoundHost.Contracts.FrameKind
+T:UltrasoundHost.Contracts.GateConfig
+T:UltrasoundHost.Contracts.GateResult
+T:UltrasoundHost.Contracts.HostCapabilities
+T:UltrasoundHost.Contracts.HostRequirements
+T:UltrasoundHost.Contracts.IDevice
+T:UltrasoundHost.Contracts.IDeviceFactory
+T:UltrasoundHost.Contracts.IDeviceFactoryContribution
+T:UltrasoundHost.Contracts.IFrameProcessor
+T:UltrasoundHost.Contracts.IPlugin
+T:UltrasoundHost.Contracts.IProcessorContribution
+T:UltrasoundHost.Contracts.IViewContribution
+T:UltrasoundHost.Contracts.IntRange
+T:UltrasoundHost.Contracts.PluginKind
+T:UltrasoundHost.Contracts.PluginManifest
+T:UltrasoundHost.Contracts.ProbeModel
+T:UltrasoundHost.Contracts.ProbeTopologies
+T:UltrasoundHost.Contracts.ProcessedFrame
+T:UltrasoundHost.Contracts.ViewDescriptor
+T:UltrasoundHost.Contracts.ViewKinds

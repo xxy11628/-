@@ -1,0 +1,76 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Contracts", "src\UltrasoundHost.Contracts\UltrasoundHost.Contracts.csproj", "{C6028C7F-CF3B-5AD7-B592-7606219C16F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Core", "src\UltrasoundHost.Core\UltrasoundHost.Core.csproj", "{056AA848-643E-5021-A6AA-47D11EC86AF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Application", "src\UltrasoundHost.Application\UltrasoundHost.Application.csproj", "{6F2A1C3D-4B5E-4A7C-9D8E-2F1B3C4D5E60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Plugins.Device.Simulator", "src\Plugins\UltrasoundHost.Plugins.Device.Simulator\UltrasoundHost.Plugins.Device.Simulator.csproj", "{5770B412-F7F8-5CD6-BFD7-7D8842C20272}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Plugins.Device.SerialUdp", "src\Plugins\UltrasoundHost.Plugins.Device.SerialUdp\UltrasoundHost.Plugins.Device.SerialUdp.csproj", "{8E4B1D62-3C7A-4F5B-9A2E-6D1C8B0F3A24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Plugins.Processing.Basic", "src\Plugins\UltrasoundHost.Plugins.Processing.Basic\UltrasoundHost.Plugins.Processing.Basic.csproj", "{9DEA2A80-4BB1-54DC-A33D-57DAF366B342}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Plugins.View.Basic", "src\Plugins\UltrasoundHost.Plugins.View.Basic\UltrasoundHost.Plugins.View.Basic.csproj", "{3B22B6A7-8F6B-4095-BF1D-A1B9AEECF926}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.App.Cli", "src\UltrasoundHost.App.Cli\UltrasoundHost.App.Cli.csproj", "{3E483726-2128-5F06-A696-B5BECE5EF4AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.App.Wpf", "src\UltrasoundHost.App.Wpf\UltrasoundHost.App.Wpf.csproj", "{48456DA3-CE49-47E5-8A9D-C1BD20DE15F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltrasoundHost.Tests", "tests\UltrasoundHost.Tests\UltrasoundHost.Tests.csproj", "{83CFD7ED-473A-5B79-B5DF-CF2FEB2019F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6028C7F-CF3B-5AD7-B592-7606219C16F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6028C7F-CF3B-5AD7-B592-7606219C16F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6028C7F-CF3B-5AD7-B592-7606219C16F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6028C7F-CF3B-5AD7-B592-7606219C16F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056AA848-643E-5021-A6AA-47D11EC86AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056AA848-643E-5021-A6AA-47D11EC86AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056AA848-643E-5021-A6AA-47D11EC86AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056AA848-643E-5021-A6AA-47D11EC86AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2A1C3D-4B5E-4A7C-9D8E-2F1B3C4D5E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2A1C3D-4B5E-4A7C-9D8E-2F1B3C4D5E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2A1C3D-4B5E-4A7C-9D8E-2F1B3C4D5E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2A1C3D-4B5E-4A7C-9D8E-2F1B3C4D5E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5770B412-F7F8-5CD6-BFD7-7D8842C20272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5770B412-F7F8-5CD6-BFD7-7D8842C20272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5770B412-F7F8-5CD6-BFD7-7D8842C20272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5770B412-F7F8-5CD6-BFD7-7D8842C20272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4B1D62-3C7A-4F5B-9A2E-6D1C8B0F3A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4B1D62-3C7A-4F5B-9A2E-6D1C8B0F3A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4B1D62-3C7A-4F5B-9A2E-6D1C8B0F3A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4B1D62-3C7A-4F5B-9A2E-6D1C8B0F3A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DEA2A80-4BB1-54DC-A33D-57DAF366B342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DEA2A80-4BB1-54DC-A33D-57DAF366B342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DEA2A80-4BB1-54DC-A33D-57DAF366B342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DEA2A80-4BB1-54DC-A33D-57DAF366B342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B22B6A7-8F6B-4095-BF1D-A1B9AEECF926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B22B6A7-8F6B-4095-BF1D-A1B9AEECF926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B22B6A7-8F6B-4095-BF1D-A1B9AEECF926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B22B6A7-8F6B-4095-BF1D-A1B9AEECF926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E483726-2128-5F06-A696-B5BECE5EF4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E483726-2128-5F06-A696-B5BECE5EF4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E483726-2128-5F06-A696-B5BECE5EF4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E483726-2128-5F06-A696-B5BECE5EF4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48456DA3-CE49-47E5-8A9D-C1BD20DE15F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48456DA3-CE49-47E5-8A9D-C1BD20DE15F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48456DA3-CE49-47E5-8A9D-C1BD20DE15F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48456DA3-CE49-47E5-8A9D-C1BD20DE15F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CFD7ED-473A-5B79-B5DF-CF2FEB2019F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CFD7ED-473A-5B79-B5DF-CF2FEB2019F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CFD7ED-473A-5B79-B5DF-CF2FEB2019F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CFD7ED-473A-5B79-B5DF-CF2FEB2019F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

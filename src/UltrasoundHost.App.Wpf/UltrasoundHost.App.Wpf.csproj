@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Only the shell is Windows-specific; Contracts, Core and plugins stay net8.0. -->
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>UltrasoundHost.App.Wpf</RootNamespace>
+    <AssemblyName>UltrasoundHost.App.Wpf</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UltrasoundHost.Contracts\UltrasoundHost.Contracts.csproj" />
+    <ProjectReference Include="..\UltrasoundHost.Core\UltrasoundHost.Core.csproj" />
+    <ProjectReference Include="..\UltrasoundHost.Application\UltrasoundHost.Application.csproj" />
+    <ProjectReference Include="..\Plugins\UltrasoundHost.Plugins.Device.Simulator\UltrasoundHost.Plugins.Device.Simulator.csproj" />
+    <ProjectReference Include="..\Plugins\UltrasoundHost.Plugins.Processing.Basic\UltrasoundHost.Plugins.Processing.Basic.csproj" />
+    <ProjectReference Include="..\Plugins\UltrasoundHost.Plugins.View.Basic\UltrasoundHost.Plugins.View.Basic.csproj" />
+  </ItemGroup>
+</Project>

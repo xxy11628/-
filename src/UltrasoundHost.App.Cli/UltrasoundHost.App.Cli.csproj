@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UltrasoundHost.Contracts\UltrasoundHost.Contracts.csproj" />
+    <ProjectReference Include="..\UltrasoundHost.Core\UltrasoundHost.Core.csproj" />
+    <ProjectReference Include="..\UltrasoundHost.Application\UltrasoundHost.Application.csproj" />
+    <ProjectReference Include="..\Plugins\UltrasoundHost.Plugins.Device.Simulator\UltrasoundHost.Plugins.Device.Simulator.csproj" />
+    <ProjectReference Include="..\Plugins\UltrasoundHost.Plugins.Processing.Basic\UltrasoundHost.Plugins.Processing.Basic.csproj" />
+  </ItemGroup>
+</Project>
